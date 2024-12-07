@@ -96,6 +96,7 @@ class GrpcClient {
     try {
       final request = DeleteByIdRequest()..id = id;
       return await client.deleteById(request);
+      
     } catch (e) {
       rethrow;
     }
